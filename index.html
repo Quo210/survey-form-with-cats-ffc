@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <!-- images
+
+    https://ibb.co/YcRkNCR
+    https://ibb.co/JQk4Nvr
+    https://ibb.co/zP4WmRz -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="container-md">
+    <header class="d-flex flex-column">
+        <h1 class="display-1 p-1 text-center bg-danger border border-5 border-light" id="title">Survey Form</h1>
+        <p id="description">This form was sent to you because we recently delivered one of our prestigious <strong>Life-time Guaranteed Feline Happiness Care Kit</strong>.</p>
+        <p>We value your opinion!</p>
+        <img class="align-self-center" src="https://i.ibb.co/qNysDSy/crowned-cat1.jpg" alt="crowned-cat1" border="0" />
+    </header>
+    <main>
+        <form action="" id="survey-form" class="container border border-4 border-light p-2 d-flex flex-column">
+
+            <fieldset class="d-flex flex-column personal-info">
+                <legend>Personal Information</legend>
+                <label for="name" id="name-label">
+                    <input type="text" id="name" placeholder="Catarina D. ..." required><p class="bg-danger text-light text-center">Name</p>
+                </label>
+    
+                <label for="catname" id="catname-label">
+                    <input type="text" id="catname" placeholder="Mr. Bigglesworth III ..." required><p class="bg-danger text-light text-center">Cat's Name</p>
+                </label>
+    
+                <label id="email-label" for="email">
+                    <input type="email" id="email" placeholder="Catlover@Catworld.cat" required><p class="bg-danger text-light text-center">E-mail</p>
+                </label>
+
+                
+                <label for="satisfaction" id="number-label">
+                    <p id="satisfaction-p">How would you qualify from 1 to 10 your cat's (and your own) satisfaction with regards to your purchase?</p>
+                    <input id="number" type="number" max="10" min="1" placeholder="10" value="10">
+                </label>
+            
+            </fieldset>
+            
+            <label for="dropdown"> Please specify which care package you were delivered
+
+                <select name="dropdown" id="dropdown" class="bg-light p-1 border border-danger border-3 text-dark">
+                    <option value="xsm">Bronze Kitty Care</option>
+                    <option value="sm">Silver Kitten Deluxe</option>
+                    <option value="md">Golden Cat Care Package</option>
+                    <option value="lg">Platinum Feline Care Package</option>
+                    <option value="xlg">Diamond Felidae Worship Package Plus</option>
+                </select>
+            </label>
+
+            <fieldset class="d-grid">
+                <legend>Packages Requested</legend>
+                
+                <label for="option1"><input type="radio" name="radio" id="option1" value="1">Single Package</label>
+                
+                <label for="option2"><input type="radio" name="radio" id="option2" value="2">Duo Package</label>
+                
+                <label for="option3"><input type="radio" name="radio" id="option3" value="bulk">Bulk Delivery</label>
+
+            </fieldset>
+
+            <fieldset class="d-grid">
+                <legend class="inputed">We also offer other services </legend>
+
+                <p>Check the boxes if you wish for any of these</p>
+                
+                <label for="option1"><input type="checkbox" name="service" id="option1" value="email">Monthly e-mail with promotions</label>
+
+                <label for="option2"><input type="checkbox" name="service" id="option2" value="treats">Subscription to our weekly CatCorpTreats™ Box delivery</label>
+
+                <label for="option3"><input type="checkbox" name="service" id="option3" value="massage">Subscription to a bi-monthly Cat-Chiropractor at home visit</label>
+                
+            </fieldset>
+
+            <fieldset class="d-grid finaldiv border border-3 border-light mb-3">
+                <legend>Comments</legend>
+                <div class="wrapper d-grid justify-content-center"">
+                    <label for="textarea">
+                        <textarea class="bg-dark text-light p-1 border border-3 border-light" name="textarea" id="comments" cols="30" rows="8" placeholder="Write to us here!"></textarea>
+                    </label>
+                </div>
+            </fieldset>
+
+            <img src="https://i.ibb.co/8c8pJrP/crowned-cat2.jpg" alt="" class="align-self-center">
+
+            <button type="submit" id="submit" class="btn btn-danger align-self-center border border-1 border-light">&#128008;
+ 
+                Submeowt Form &#128062;
+            </button>
+        </form>
+    </main>
+    <footer>
+        <h6>Made by <a class="link-danger" href="https://github.com/Quo210">Quo</a></h6>
+</body>
+</html>

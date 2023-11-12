@@ -1,0 +1,52 @@
+html{
+    box-sizing: border-box;
+}
+
+label{
+    padding: 0.2rem;
+}
+
+body{
+    background-color: #333;
+    color: whitesmoke
+}
+
+input[type="radio"], input[type="checkbox"]{
+    margin: 0 0.5rem 0 0;
+}
+
+input[type="text"], input[type="email"], select{
+    width: 100%;
+}
+
+legend{
+    background-color: var(--bs-danger);
+    text-align: center;
+    margin: 0.5rem 0;
+    border: 2px solid var(--bs-light)
+}
+
+textarea::placeholder{
+    color: rgba(245, 245, 245, 0.733);
+    text-align: center;
+}
+
+fieldset.personal-info label p{
+    /* margin: 0 0.5rem; */
+}
+
+.finaldiv{
+    background-image: url("https://i.ibb.co/rkykHPx/Cat-Pattern3.jpg");
+    background-size: cover;
+}
+
+/* https://i.ibb.co/M57SNgN/Cat-Pattern1.jpg
+https://i.ibb.co/L6GVXnT/cat-Pattern2.jpg
+https://i.ibb.co/rkykHPx/Cat-Pattern3.jpg */
+
+img{
+    border: 4px white solid;
+    margin-bottom: 1rem;
+    width: 400px;
+    max-width: 100%;
+}
